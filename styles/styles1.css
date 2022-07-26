@@ -13,7 +13,6 @@ body{
     margin: 0;
     font-family: 'Quicksand', sans-serif;
 }
-
 .login {
     width: 100%;
     height: 100vh;
@@ -21,14 +20,12 @@ body{
     place-items: center;
   }
 
-  .form-container{
-    display:grid;
-    grid-template-rows:auto 1fr 
-    auto;
-    width:300;
-    justify-items: center;
-  }
-  
+.form-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+
 .logo {
     width: 150px;
     margin-bottom: 48px;
@@ -51,32 +48,26 @@ body{
     text-align: center;
 }
 
-.email-image{
-    width: 132px;
-    height: 132px;
-    border-radius: 50%;
-    background-color: var(--text-input-field);
+.form{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 24px;
-}
-
-.email-image image{
-    width: 80px;
+    flex-direction: column;
 
 }
 
-.resend{
+.label{
     font-size: var(--sm);
-}
-.resend span{
-    color: var(--very-light-pinki);
+    font-weight: bold;
+    margin-bottom: 4px;
 }
 
-.resend a{
-    color: var(--hospital-green);
-    text-decoration: none;
+.input{
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 32px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
 }
 
 .primary-button {
